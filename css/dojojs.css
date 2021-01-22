@@ -116,3 +116,11 @@ footer a:hover {
     color:white;
     font-weight:bold;
 }
+
+main > header > nav > a > div {
+
+   visibility: visible;
+
+}
+
+
