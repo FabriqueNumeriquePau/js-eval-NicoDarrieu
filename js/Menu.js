@@ -1,30 +1,30 @@
 class Menu {
 
-    constructor (nom, lien, sousmenus) {
-    this.nom = nom;
-    this.lien = lien;
-    this.sousmenu = sousmenus; 
+    constructor(nom, lien, sousmenus) {
+        this.nom = nom;
+        this.lien = lien;
+        this.sousmenu = sousmenus;
     };
     afficher() {
 
-    const categorie = document.createElement ("a");
+        const categorie = document.createElement("a");
 
-    categorie.textContent = this.nom;
-    categorie.href = this.lien;
+        categorie.textContent = this.nom;
+        categorie.href = this.lien;
 
-    return categorie;
+        return categorie;
     }
-    sousafficher () {
+    sousafficher() {
 
-    const souscategorie = document.createElement ("div")
-    const categorie = document.createElement ("a");
+        const souscategorie = document.createElement("div")
+        const categorie = document.createElement("a");
 
-    souscategorie.textContent = this.nom;
-    souscategorie.href = this.lien;
+        souscategorie.textContent = this.nom;
+        souscategorie.href = this.lien;
 
-    souscategorie.appendChild (categorie);
+        souscategorie.appendChild(categorie);
 
-    return souscategorie;
+        return souscategorie;
     }
 }
 
